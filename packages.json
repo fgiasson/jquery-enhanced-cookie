@@ -1,0 +1,33 @@
+{
+    "name": "enhanced-cookie",
+    "version": "1.0.0",
+    "title": "jQuery Enhanced Cookie",
+    "author": {
+        "name": "Frederick Giasson",
+        "url": "http://fgiasson.com"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "MIT-LICENSE.txt"
+        },
+        {
+            "type": "GPL",
+            "url": "GPL-LICENSE.txt"
+        }
+    ],
+    "dependencies": {
+        "jquery": "1"
+    },
+    "description": "This extension to the jQuery Cookie plugin adds the capability to save content that is bigger than 4096 bytes long using two different mechanism: the usage of HTML5's localStorage, or the usage of a series of cookies where the content is chunked and saved. This extension is backward compatible with the jQuery Cookie plugin and its usage should be transparent to the users. Even if existing cookies have been created with the normal Cookie plugin, they will still be usable by this new extension. The usage syntax is the same, but 3 new options have been created.",
+    "keywords": [
+        "cookie",
+        "data",
+        "save",
+        "storage"
+    ],
+    "homepage": "https://github.com/fgiasson/jquery-enhanced-cookie",
+    "files": [
+        "jquery.enhanced.cookie.js"
+    ]
+}
