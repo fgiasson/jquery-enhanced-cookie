@@ -204,4 +204,4 @@
         }
         return null;
     };
-});
+})(jQuery);
