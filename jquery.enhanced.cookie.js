@@ -1,4 +1,3 @@
-
 /**
  * jQuery Extended Cookie Plugin
  *
@@ -14,14 +13,17 @@
 jQuery.cookie = function (key, value, options) {
   
   // Check if localStorage of HTML5 exists in this browser
-  var isStorageAvailable;
-  try {
-    isStorageAvailable = window.localStorage;
-    isStorageAvailable.setItem("isStorageAvailable", "true");
-    if (isStorageAvailable.getItem("isStorageAvailable") != "true") {
-      isStorageAvailable = false;
+  var isStorageAvailable = false;
+  if ("localStorage" in window)
+  {
+    try {
+      window.localStorage.setItem("isStorageAvailable", "true");
+      isStorageAvailable = true;
+      window.localStorage.removeItem("isStorageAvailable", "true");
+    } catch (PrivateBrowsingError) {
+      // iOS Private Browsing mode will throw a "QUOTA_EXCEEDED_ERRROR DOM Exception 22" error
     }
-  } catch(e) {}  
+  }
   
   // Check if the user wants to create or delete a cookie.
   if (arguments.length > 1 && String(value) !== "[object Object]") 
