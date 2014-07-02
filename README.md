@@ -98,5 +98,5 @@ Let's see how to use the <code>maxNumberOfCookies</code> and <code>maxChunkSize<
 With this example, the content will be saved in multiple cookies of 1000 bytes each up to 30 cookies:
 
 ```javascript
-var value = $.cookie('my-cookie', "the-content-of-my-cookie-is-10000-bytes-long...", {useLocalStorage: false, maxChunkSize  = 1000, maxNumberOfCookies = 30, expires: 365, path: "/" });
+var value = $.cookie('my-cookie', "the-content-of-my-cookie-is-10000-bytes-long...", {useLocalStorage: false, maxChunkSize: 1000, maxNumberOfCookies: 30, expires: 365, path: "/" });
 ```
