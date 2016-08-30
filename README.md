@@ -15,7 +15,7 @@ Before I explains how this extension works, let me introduce three new options t
 * <code>useLocalStorage</code> - This tells the extended Cookie plugin to use the HTML5's localStorage capabilities of the browser instead of a cookie to save that value. <code>(default: true)</code>
 
 
-How Does This Extension Works?
+How Does This Extension Work?
 ==============================
 
 As I said in the introduction of this blog post, this extension to the jQuery Cookie plugin does two things:
